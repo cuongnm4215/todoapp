@@ -1,0 +1,110 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.content {
+    margin-top: 100px;
+}
+.add-todo {
+    display: flex;
+    justify-content: center;
+}
+.text-input {
+    width: 500px !important;
+}
+.btn-add-todo {
+    background: #227dc7 !important;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+.btn-add-todo:hover {
+    background: #1b66a2 !important;
+    transform: scale(1.2);
+}
+.todo-list {
+    width: 570px;
+    margin: 20px auto 100px auto;
+}
+.todo-list > .body {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.todo-items {
+    display: flex;
+    flex-direction: column;
+}
+.todo-item {
+    border-bottom: 1px solid #ced4da;
+    line-height: 3em;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    transition: all 200ms ease-in-out;
+}
+.todo-item:hover {
+    background: #227dc7;
+    color: #fff;
+    padding: 0 20px;
+    font-weight: bolder;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.todo-item > .todo-done {
+    align-self: center;
+    border: solid 1px #ced4da;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.todo-done:hover {
+    border-color: #fff;
+}
+.todo-item > .todo-text {
+    align-self: center;
+    justify-self: start;
+}
+.todo-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+.todo-item > .todo-action {
+    align-self: center;
+    justify-self: right;
+}
+.todo-action > .todo-edit, .todo-action > .todo-delete {
+    display: none;
+}
+.todo-item:hover > .todo-action > .todo-edit, .todo-item:hover > .todo-action > .todo-delete {
+    display: inline-block;
+}
+.mar-left-10 {
+    margin-left: 10px;
+}
+.todo-edit:hover {
+    color: #28a745;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.todo-delete:hover {
+    color: #c51f1a;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
